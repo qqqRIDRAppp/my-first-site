@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Веб-разработка с нуля — SkillUp</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="course-page">
+
+<header class="course-header">
+    <div class="container course-header-inner">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">◆</span>
+            <span>Skill<span>Up</span></span>
+        </a>
+
+        <a href="index.html#courses" class="back-link">
+            ← Все курсы
+        </a>
+
+    </div>
+</header>
+
+
+<main class="learning-layout">
+
+    <!-- ЛЕВАЯ ПАНЕЛЬ -->
+
+    <aside class="lesson-sidebar">
+
+        <div class="sidebar-course-info">
+
+            <span class="sidebar-label">
+                Бесплатный курс
+            </span>
+
+            <h2>
+                Веб-разработка<br>
+                с нуля
+            </h2>
+
+            <p>
+                Основы HTML и CSS для начинающих.
+            </p>
+
+        </div>
+
+
+        <div class="progress-block">
+
+            <div class="progress-text">
+                <span>Прогресс</span>
+                <strong id="progressText">0%</strong>
+            </div>
+
+            <div class="progress-line">
+                <div
+                    class="progress-fill"
+                    id="progressFill">
+                </div>
+            </div>
+
+        </div>
+
+
+        <nav class="lesson-navigation">
+
+            <button
+                class="lesson-link active"
+                data-lesson="1">
+
+                <span class="lesson-number">01</span>
+
+                <span>
+                    <strong>Что такое HTML</strong>
+                    <small>5 минут</small>
+                </span>
+
+            </button>
+
+
+            <button
+                class="lesson-link"
+                data-lesson="2">
+
+                <span class="lesson-number">02</span>
+
+                <span>
+                    <strong>Первая страница</strong>
+                    <small>10 минут</small>
+                </span>
+
+            </button>
+
+
+            <button
+                class="lesson-link"
+                data-lesson="3">
+
+                <span class="lesson-number">03</span>
+
+                <span>
+                    <strong>Основы CSS</strong>
+                    <small>10 минут</small>
+                </span>
+
+            </button>
+
+
+            <button
+                class="lesson-link"
+                data-lesson="4">
+
+                <span class="lesson-number">04</span>
+
+                <span>
+                    <strong>Мини-проект</strong>
+                    <small>15 минут</small>
+                </span>
+
+            </button>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- ОСНОВНАЯ ЧАСТЬ -->
+
+    <section class="lesson-content">
+
+        <div class="lesson-container">
+
+            <!-- УРОК 1 -->
+
+            <article
+                class="lesson active"
+                id="lesson-1">
+
+                <div class="lesson-badge">
+                    Урок 1 из 4
+                </div>
+
+                <h1>
+                    Что такое HTML?
+                </h1>
+
+                <p class="lesson-intro">
+                    HTML — это язык разметки, который описывает
+                    структуру веб-страницы.
+                </p>
+
+
+                <div class="lesson-note">
+
+                    <strong>Важно</strong>
+
+                    <p>
+                        HTML отвечает за структуру страницы,
+                        а не за её внешний вид.
+                        За оформление обычно отвечает CSS.
+                    </p>
+
+                </div>
+
+
+                <h2>Как работают теги?</h2>
+
+                <p>
+                    HTML-страница состоит из элементов.
+                    Большинство элементов записываются
+                    с помощью открывающего и закрывающего тегов.
+                </p>
+
+
+                <div class="code-example">
+
+                    <div class="code-header">
+                        HTML
+                    </div>
+
+                    <pre><code>&lt;h1&gt;Привет, мир!&lt;/h1&gt;
+
+&lt;p&gt;
+    Это моя первая веб-страница.
+&lt;/p&gt;</code></pre>
+
+                </div>
+
+
+                <h2>Что здесь происходит?</h2>
+
+                <div class="explanation-list">
+
+                    <div>
+                        <code>&lt;h1&gt;</code>
+
+                        <p>
+                            Главный заголовок страницы.
+                        </p>
+                    </div>
+
+                    <div>
+                        <code>&lt;p&gt;</code>
+
+                        <p>
+                            Обычный текстовый абзац.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="lesson-task">
+
+                    <span>Практика</span>
+
+                    <h3>
+                        Попробуй самостоятельно
+                    </h3>
+
+                    <p>
+                        Создай заголовок со своим именем
+                        и под ним напиши один абзац о себе.
+                    </p>
+
+                    <div class="code-example light-code">
+                        <pre><code>&lt;h1&gt;Меня зовут ...&lt;/h1&gt;
+
+&lt;p&gt;Я изучаю веб-разработку.&lt;/p&gt;</code></pre>
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="complete-button"
+                    data-complete="1">
+
+                    ✓ Завершить урок
+
+                </button>
+
+            </article>
+
+
+            <!-- УРОК 2 -->
+
+            <article
+                class="lesson"
+                id="lesson-2">
+
+                <div class="lesson-badge">
+                    Урок 2 из 4
+                </div>
+
+                <h1>
+                    Создаём первую HTML-страницу
+                </h1>
+
+                <p class="lesson-intro">
+                    Теперь соберём минимальную структуру
+                    настоящего HTML-документа.
+                </p>
+
+
+                <h2>Основная структура</h2>
+
+                <div class="code-example">
+
+                    <div class="code-header">
+                        HTML
+                    </div>
+
+                    <pre><code>&lt;!DOCTYPE html&gt;
+
+&lt;html lang="ru"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Мой сайт&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1&gt;Мой первый сайт&lt;/h1&gt;
+
+    &lt;p&gt;
+        Я создал эту страницу сам.
+    &lt;/p&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+
+                </div>
+
+
+                <div class="lesson-note">
+
+                    <strong>Запомни</strong>
+
+                    <p>
+                        Всё содержимое, которое пользователь
+                        видит на странице, обычно находится
+                        внутри элемента
+                        <code>&lt;body&gt;</code>.
+                    </p>
+
+                </div>
+
+
+                <div class="lesson-task">
+
+                    <span>Задание</span>
+
+                    <h3>
+                        Создай свой документ
+                    </h3>
+
+                    <p>
+                        Создай новый HTML-файл,
+                        добавь заголовок страницы,
+                        заголовок H1 и два абзаца.
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="complete-button"
+                    data-complete="2">
+
+                    ✓ Завершить урок
+
+                </button>
+
+            </article>
+
+
+            <!-- УРОК 3 -->
+
+            <article
+                class="lesson"
+                id="lesson-3">
+
+                <div class="lesson-badge">
+                    Урок 3 из 4
+                </div>
+
+                <h1>
+                    Основы CSS
+                </h1>
+
+                <p class="lesson-intro">
+                    CSS отвечает за внешний вид:
+                    цвета, размеры, отступы,
+                    расположение элементов и многое другое.
+                </p>
+
+
+                <h2>Добавим стиль</h2>
+
+                <div class="code-example">
+
+                    <div class="code-header">
+                        CSS
+                    </div>
+
+                    <pre><code>body {
+    background: #f5f5ff;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #5b3df5;
+    font-size: 48px;
+}
+
+p {
+    color: #555;
+}</code></pre>
+
+                </div>
+
+
+                <h2>Как читать CSS?</h2>
+
+                <p>
+                    Сначала мы выбираем элемент,
+                    например <code>h1</code>,
+                    а внутри фигурных скобок
+                    указываем его свойства.
+                </p>
+
+
+                <div class="explanation-list">
+
+                    <div>
+                        <code>color</code>
+                        <p>Цвет текста.</p>
+                    </div>
+
+                    <div>
+                        <code>font-size</code>
+                        <p>Размер текста.</p>
+                    </div>
+
+                    <div>
+                        <code>background</code>
+                        <p>Фон элемента.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="lesson-task">
+
+                    <span>Практика</span>
+
+                    <h3>
+                        Измени свою страницу
+                    </h3>
+
+                    <p>
+                        Сделай цветной заголовок,
+                        измени фон страницы
+                        и увеличь размер текста.
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="complete-button"
+                    data-complete="3">
+
+                    ✓ Завершить урок
+
+                </button>
+
+            </article>
+
+
+            <!-- УРОК 4 -->
+
+            <article
+                class="lesson"
+                id="lesson-4">
+
+                <div class="lesson-badge">
+                    Урок 4 из 4
+                </div>
+
+                <h1>
+                    Мини-проект
+                </h1>
+
+                <p class="lesson-intro">
+                    Соберём простую карточку разработчика
+                    из HTML и CSS.
+                </p>
+
+
+                <h2>HTML</h2>
+
+                <div class="code-example">
+
+                    <div class="code-header">
+                        HTML
+                    </div>
+
+                    <pre><code>&lt;div class="card"&gt;
+
+    &lt;h2&gt;Анна&lt;/h2&gt;
+
+    &lt;p&gt;
+        Начинающий веб-разработчик
+    &lt;/p&gt;
+
+    &lt;a href="#"&gt;
+        Связаться
+    &lt;/a&gt;
+
+&lt;/div&gt;</code></pre>
+
+                </div>
+
+
+                <h2>CSS</h2>
+
+                <div class="code-example">
+
+                    <div class="code-header">
+                        CSS
+                    </div>
+
+                    <pre><code>.card {
+    width: 300px;
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 40px
+        rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    color: #5b3df5;
+}</code></pre>
+
+                </div>
+
+
+                <div class="lesson-task final-task">
+
+                    <span>Финальное задание</span>
+
+                    <h3>
+                        Сделай карточку своей
+                    </h3>
+
+                    <p>
+                        Измени имя, описание, цвета,
+                        размеры и добавь ссылку.
+                        Попробуй получить собственный дизайн.
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="complete-button"
+                    data-complete="4">
+
+                    ✓ Завершить курс
+
+                </button>
+
+
+                <div
+                    class="course-finished"
+                    id="courseFinished">
+
+                    🎉 Курс пройден!
+
+                    <span>
+                        Отличная работа. Ты изучил основы
+                        HTML и CSS.
+                    </span>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
